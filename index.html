@@ -32,13 +32,13 @@
       cursor:pointer; transition:.25s ease; line-height:1.4; white-space:nowrap;
     }
     .btn:active{transform:scale(0.97);}
-    .btn-main{background:var(--brand); color:#fff;}
+    .btn-main{background:var(--brand); color:#F5FBFF;}
     .btn-main:hover{opacity:0.9;}
     .text-btn{ margin-top:16px; background:none; border:none; color:#32A4F8; font-size:14px; cursor:pointer; }
 
     .file-box{
       width:80%; max-width:280px; margin:15px auto; padding:20px;
-      border:2px dashed #32A4F8; border-radius:12px; text-align:center; background:#fffdf5;
+      border:2px dashed #32A4F8; border-radius:12px; text-align:center; background:#F5FBFF;
     }
     .file-box input{ width:100%; border:none; outline:none; font-size:14px; }
 
@@ -115,6 +115,17 @@
       color:#494747;
       font-weight:700;
     }
+
+    .report-date {
+      font-weight: 400;        
+      font-size: 13px;         
+      color: #818080;             
+      margin: 10px 0 6px;
+      text-align: left;         
+      opacity: 0.8;
+      border-bottom: 1px solid #e5e5e5; 
+      padding-bottom: 3px;             
+    }
   </style>
 
   <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCor1bE_qsL59o_7Xl7H-NdXYnOhMDo74s&callback=initMap"></script>
@@ -188,10 +199,17 @@
       <p style="font-size:15px; color:#333; margin:0;">약 <b style="color:#32A4F8;">121,250원</b> 혜택, NH카드로 누려보세요!</p>
     </div>
     <div class="report-list">
-      <div class="report-item"><span>잇쇼니라멘 <small>11:10</small></span><span>+2,300원</span></div>
-      <div class="report-item"><span>오사카성 <small>13:55</small></span><span>+4,800원</span></div>
-      <div class="report-item"><span>호텔 뉴 오사카 <small>16:15</small></span><span>+15,000원</span></div>
-      <div class="report-item"><span>블루보틀 커피 롯폰기 <small>20:15</small></span><span>+2,100원</span></div>
+      <p class="report-date">11월 25일</p>
+      <div class="report-item"><span>잇쇼니라멘 <small>16:10</small></span><span>+2,300원</span></div>
+      <div class="report-item"><span>오사카성 <small>20:55</small></span><span>+4,800원</span></div>
+
+      <p class="report-date">11월 26일</p>
+      <div class="report-item"><span>호텔 뉴 오사카 <small>12:15</small></span><span>+15,000원</span></div>
+      <div class="report-item"><span>도톤보리 <small>15:15</small></span><span>+4,000원</span></div>
+      <div class="report-item"><span>나니와노유 온천 <small>16:15</small></span><span>+5,800원</span></div>
+
+      <p class="report-date">11월 27일</p>
+      <div class="report-item"><span>블루보틀 커피 롯폰기 <small>10:15</small></span><span>+2,100원</span></div>
     </div>
     <button class="text-btn" style="margin-top:20px;" onclick="swap('reportSection','mapSection')">◀ 전으로</button>
   </div>
@@ -294,6 +312,7 @@
   </script>
 </body>
 </html>
+
 
 
 
